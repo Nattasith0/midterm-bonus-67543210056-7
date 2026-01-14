@@ -28,7 +28,7 @@
 
 ## 📂 Project Structure
 ```text
-midterm-individual-67543210066-6/
+midterm-individual-67543210056-7/
 ├── src/ # Backend (Server)
 │ ├── presentation/ # HTTP Layer
 │ │ ├── routes/
@@ -116,7 +116,7 @@ midterm-individual-67543210066-6/
 ## 🚀 How to Run
 ```bash
 # 1. Clone repository
-git clone https://github.com/Jta003/midterm-BONUS-67543210066.git
+git clone https://github.com/Nattasith0/midterm-BONUS-67543210056-7.git
 
 # 2. Install dependencies
 npm install
