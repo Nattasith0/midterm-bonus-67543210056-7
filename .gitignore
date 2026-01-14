@@ -1,5 +1,0 @@
-# .gitignore
-backend/node_modules/
-backend/*.db
-backend/.env
-.DS_Store

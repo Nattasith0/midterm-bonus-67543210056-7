@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Library Management System</h1>
+            <p>Client-Server Architecture Demo</p>
+            <p class="hint">Backend: <span id="api-base"></span></p>
+        </header>
+
+        <div class="toolbar">
+            <button id="add-book-btn" class="primary">+ Add Book</button>
+
+            <div class="filters">
+                <button id="filter-all" class="active">All</button>
+                <button id="filter-available">Available</button>
+                <button id="filter-borrowed">Borrowed</button>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <div class="stat-card">
+                <h3 id="stat-available">0</h3>
+                <p>Available</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="stat-borrowed">0</h3>
+                <p>Borrowed</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="stat-total">0</h3>
+                <p>Total</p>
+            </div>
+        </div>
+
+        <div id="loading" class="loading" style="display:none;">
+            <p>Loading...</p>
+        </div>
+
+        <div id="book-list" class="book-list"></div>
+
+        <!-- Modal Form -->
+        <div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="hideBookForm()">&times;</span>
+                <h2 id="form-title">Add Book</h2>
+
+                <form id="book-form">
+                    <input type="hidden" id="book-id" />
+
+                    <div class="form-group">
+                        <label for="title">Title *</label>
+                        <input type="text" id="title" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">Author *</label>
+                        <input type="text" id="author" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="isbn">ISBN *</label>
+                        <input type="text" id="isbn" required />
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="primary">Save</button>
+                        <button type="button" onclick="hideBookForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/api.js"></script>
+    <script src="js/components/bookList.js"></script>
+    <script src="js/components/bookForm.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
