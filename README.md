@@ -138,6 +138,16 @@ npm start
 | DELETE | `/api/books/:id`        | Delete a book                   | -                 |
 
 
+## UI
+1.UI หลัก
+<img width="1916" height="1035" alt="Screenshot 2026-01-15 211710" src="https://github.com/user-attachments/assets/dc071a7f-9240-434e-aa34-9500e49b55b7" />
+
+
+2.borrow
+<img width="1919" height="1035" alt="Screenshot 2026-01-15 211723" src="https://github.com/user-attachments/assets/3faea12d-687e-404b-9c45-ead5a416b0d7" />
+
+
+
 ## 📡 Postman Test
 1.Get all books
 <img width="1070" height="880" alt="Screenshot 2026-01-14 144456" src="https://github.com/user-attachments/assets/94838d79-f072-4979-9fcc-55dbebf7fff2" />
